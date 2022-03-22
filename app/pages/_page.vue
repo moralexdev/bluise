@@ -47,6 +47,7 @@ export default class PageTemplate extends Vue {
     if (payload) {
       return { page: payload };
     }
+    return null;
 
     // try {
     //   const page = require(`@/content/pages/${params.page}.json`);

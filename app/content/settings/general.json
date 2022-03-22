@@ -1,10 +1,10 @@
 {
-  "title": "Homev",
-  "titleTemplate": "| Bluise",
+  "title": "morale.dev",
+  "titleTemplate": "| frontender",
   "welcomeText": "# Hello, I'm Alex - a frontend developer who does show jumping.\n\n If you want to collaborate - please reach me at anarchistkasan@gmail.com",
   "logo": "/images/uploads/logo.svg",
   "icon": "/images/uploads/logo.png",
-  "loadingColor": "#0b3765",
-  "seoDescription": "A quickstart for Nuxt & Netlify CMS",
+  "loadingColor": "##38761d",
+  "seoDescription": "morale.dev personal page",
   "seoMetaImage": ""
 }
