@@ -3,33 +3,9 @@
     <div class="py-8 md:py-16 text-center">
       <h1 class="text-lg md:text-xl lg:text-4xl xl:text-6xl">Blog</h1>
       <h2 class="text-base md:text-lg lg:text-xl xl:text-2xl">
-        Slow-carb messenger bag mlkshk fingerstache four dollar toast.
+        I promise I'll add something here soon, stay tuned =)
       </h2>
     </div>
-
-    <div class="flex flex-wrap md:-mx-4 pb-20">
-      <div v-for="(post, index) in posts" :key="index" class="w-full md:w-1/2 my-4 md:px-4">
-        <div class="post">
-          <nuxt-link :to="`/blog/${post.slug}`">
-            <img
-              :alt="post.title"
-              class="w-full"
-              :src="post.featuredImage || 'https://source.unsplash.com/random/640x340'"
-            />
-            <div class="p-6 bg-white">
-              <h2 class="text-2xl mb-2">{{ post.title }}</h2>
-
-              <p class="text-base font-light">
-                {{ post.excerpt }}
-              </p>
-
-              <h6 class="text-blue-600 mt-4 font-medium">Read more</h6>
-            </div>
-          </nuxt-link>
-        </div>
-      </div>
-    </div>
-    <Pagination v-if="totalPages > 1" :current-page="currentPage" :total-pages="totalPages" />
   </section>
 </template>
 
