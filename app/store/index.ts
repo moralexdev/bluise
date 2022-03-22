@@ -35,19 +35,19 @@ interface Actions<S, R> extends ActionTree<S, R> {
 export const actions: Actions<State, State> = {
   async GET_POSTS_LIST({ commit }): Promise<void | Error> {
     // Use webpack to search the blog directory matching .json files
-    const context = await require.context('@/content/blog/', false, /\.json$/);
-    const posts = await getContent({ context, prefix: 'blog' });
-    commit('SET_POSTS', posts);
+    // const context = await require.context('@/content/blog/', false, /\.json$/);
+    // const posts = await getContent({ context, prefix: 'blog' });
+    commit('SET_POSTS', []);
   },
 
   async GET_PAGES_LIST({ commit }): Promise<void | Error> {
     // Use webpack to search the blog directory matching .json files
-    const context = await require.context('@/content/pages/', false, /\.json$/);
-    const pages = await getContent({
-      context,
-      prefix: 'pages',
-    });
-    commit('SET_PAGES', pages);
+    // const context = await require.context('@/content/pages/', false, /\.json$/);
+    // const pages = await getContent({
+    //   context,
+    //   prefix: 'pages',
+    // });
+    commit('SET_PAGES', []);
   },
 
   async nuxtServerInit({ dispatch }): Promise<void> {
