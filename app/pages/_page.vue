@@ -48,15 +48,15 @@ export default class PageTemplate extends Vue {
       return { page: payload };
     }
 
-    try {
-      const page = require(`@/content/pages/${params.page}.json`);
-
-      return {
-        page,
-      };
-    } catch (e) {
-      throw new Error('Not found');
-    }
+    // try {
+    //   const page = require(`@/content/pages/${params.page}.json`);
+    //
+    //   return {
+    //     page,
+    //   };
+    // } catch (e) {
+    //   throw new Error('Not found');
+    // }
   }
 }
 </script>
