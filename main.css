@@ -1,7 +1,7 @@
 html {
     font-family: 'IBM Plex Sans', sans-serif;
     line-height: 150%;
-    background: url('rocks.jpg') center 0 no-repeat, oklch(0.2 0 0);
+    background: url('img/rocks.jpg') center 0 no-repeat, oklch(0.2 0 0);
     background-size: contain;
     color: oklch(1 0 0 / 0.9);
     background-blend-mode: color-dodge;
