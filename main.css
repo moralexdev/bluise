@@ -1,0 +1,24 @@
+html {
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 150%;
+    background: url('rocks.jpg') center 0 no-repeat, oklch(0.2 0 0);
+    background-size: contain;
+    color: oklch(1 0 0 / 0.9);
+    background-blend-mode: color-dodge;
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15vw;
+}
+
+section {
+    text-align: left;
+}
+a, a:visited {
+    color: oklch(1 0 0 / 0.9);
+    text-decoration-color: oklch(1 0 0 / 0.3);
+    text-decoration-thickness: 3px;
+    transition: color 0.15s ease-in, text-decoration-color 0.2s ease-in;
+}
